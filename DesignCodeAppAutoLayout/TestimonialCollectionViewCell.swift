@@ -14,4 +14,5 @@ class TestimonialCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var job: UILabel!
     @IBOutlet weak var avatar: UIImageView!
     
+    
 }
