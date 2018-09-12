@@ -18,6 +18,7 @@
 		EF32A2722146F35F00A70443 /* SectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF32A2712146F35F00A70443 /* SectionCollectionViewCell.swift */; };
 		EF32A2742147229800A70443 /* TestimonialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF32A2732147229800A70443 /* TestimonialViewController.swift */; };
 		EF32A276214722B900A70443 /* TestimonialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF32A275214722B900A70443 /* TestimonialCollectionViewCell.swift */; };
+		EF40EBEB2149826A008EEA53 /* ChaptersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF40EBEA2149826A008EEA53 /* ChaptersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		EF32A2712146F35F00A70443 /* SectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCollectionViewCell.swift; sourceTree = "<group>"; };
 		EF32A2732147229800A70443 /* TestimonialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestimonialViewController.swift; sourceTree = "<group>"; };
 		EF32A275214722B900A70443 /* TestimonialCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestimonialCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF40EBEA2149826A008EEA53 /* ChaptersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaptersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			children = (
 				EF32A258214322B300A70443 /* AppDelegate.swift */,
 				EF32A25A214322B300A70443 /* HomeViewController.swift */,
+				EF40EBEA2149826A008EEA53 /* ChaptersViewController.swift */,
 				EF32A26D2144D68B00A70443 /* SectionViewController.swift */,
 				EF32A2712146F35F00A70443 /* SectionCollectionViewCell.swift */,
 				EF32A26F2146F2C800A70443 /* Data.swift */,
@@ -161,6 +164,7 @@
 				EF32A2722146F35F00A70443 /* SectionCollectionViewCell.swift in Sources */,
 				EF32A276214722B900A70443 /* TestimonialCollectionViewCell.swift in Sources */,
 				EF32A261214322B300A70443 /* DesignCodeAppAutoLayout.xcdatamodeld in Sources */,
+				EF40EBEB2149826A008EEA53 /* ChaptersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
