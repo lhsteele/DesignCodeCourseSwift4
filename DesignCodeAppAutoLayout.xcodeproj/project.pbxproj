@@ -19,6 +19,8 @@
 		EF32A2742147229800A70443 /* TestimonialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF32A2732147229800A70443 /* TestimonialViewController.swift */; };
 		EF32A276214722B900A70443 /* TestimonialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF32A275214722B900A70443 /* TestimonialCollectionViewCell.swift */; };
 		EF40EBEB2149826A008EEA53 /* ChaptersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF40EBEA2149826A008EEA53 /* ChaptersViewController.swift */; };
+		EF40EBED214997B4008EEA53 /* BookmarksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF40EBEC214997B4008EEA53 /* BookmarksTableViewController.swift */; };
+		EF40EBEF2149A561008EEA53 /* BookmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF40EBEE2149A561008EEA53 /* BookmarkTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		EF32A2732147229800A70443 /* TestimonialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestimonialViewController.swift; sourceTree = "<group>"; };
 		EF32A275214722B900A70443 /* TestimonialCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestimonialCollectionViewCell.swift; sourceTree = "<group>"; };
 		EF40EBEA2149826A008EEA53 /* ChaptersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaptersViewController.swift; sourceTree = "<group>"; };
+		EF40EBEC214997B4008EEA53 /* BookmarksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksTableViewController.swift; sourceTree = "<group>"; };
+		EF40EBEE2149A561008EEA53 /* BookmarkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 				EF32A2712146F35F00A70443 /* SectionCollectionViewCell.swift */,
 				EF32A26F2146F2C800A70443 /* Data.swift */,
 				EF32A25C214322B300A70443 /* Main.storyboard */,
+				EF40EBEE2149A561008EEA53 /* BookmarkTableViewCell.swift */,
+				EF40EBEC214997B4008EEA53 /* BookmarksTableViewController.swift */,
 				EF32A2732147229800A70443 /* TestimonialViewController.swift */,
 				EF32A275214722B900A70443 /* TestimonialCollectionViewCell.swift */,
 				EF32A262214322BE00A70443 /* Assets.xcassets */,
@@ -157,8 +163,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF32A25B214322B300A70443 /* HomeViewController.swift in Sources */,
+				EF40EBED214997B4008EEA53 /* BookmarksTableViewController.swift in Sources */,
 				EF32A2702146F2C800A70443 /* Data.swift in Sources */,
 				EF32A259214322B300A70443 /* AppDelegate.swift in Sources */,
+				EF40EBEF2149A561008EEA53 /* BookmarkTableViewCell.swift in Sources */,
 				EF32A26E2144D68B00A70443 /* SectionViewController.swift in Sources */,
 				EF32A2742147229800A70443 /* TestimonialViewController.swift in Sources */,
 				EF32A2722146F35F00A70443 /* SectionCollectionViewCell.swift in Sources */,
