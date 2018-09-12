@@ -9,7 +9,7 @@
 import UIKit
 import AVKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var deviceImage: UIImageView!
@@ -39,7 +39,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         scrollView.delegate = self
         chapterCollectionView.delegate = self
-        chapterCollectionView.dataSource = self 
+        chapterCollectionView.dataSource = self
+        
+        navigationController?.setNavigationBarHidden(true, animated: false)
         
         titleLabel.alpha = 0
         deviceImage.alpha = 0
@@ -52,7 +54,7 @@ class ViewController: UIViewController {
         }
         
         //addBlurStatusBar()
-        setStatusBarBackgroundColor(color: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.5))
+        //setStatusBarBackgroundColor(color: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.5))
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -105,7 +107,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return sections.count
     }
@@ -129,9 +131,13 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
 }
 
-extension ViewController: UIScrollViewDelegate {
+extension HomeViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let offsetY = scrollView.contentOffset.y
+        
+        let navigationIsHidden = offsetY <= 0
+        navigationController?.setNavigationBarHidden(navigationIsHidden, animated: true)
+        
         if offsetY < 0 {
             heroView.transform = CGAffineTransform(translationX: 0, y: offsetY)
             playVisualEffectView.transform = CGAffineTransform(translationX: 0, y: -offsetY/3)
