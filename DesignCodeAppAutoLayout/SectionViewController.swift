@@ -17,6 +17,10 @@ class SectionViewController: UIViewController {
     @IBAction func closeButtonTapped(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var coverView: UIView!
+    @IBOutlet weak var subheadVisualEffectView: UIVisualEffectView!
+    @IBOutlet weak var closeVisualEffectView: UIVisualEffectView!
     
     var section: [String: String]!
     var sections: [[String: String]]!

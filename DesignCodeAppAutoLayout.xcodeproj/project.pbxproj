@@ -23,6 +23,8 @@
 		EF40EBEF2149A561008EEA53 /* BookmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF40EBEE2149A561008EEA53 /* BookmarkTableViewCell.swift */; };
 		EF40EBF12149B360008EEA53 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF40EBF02149B360008EEA53 /* WebViewController.swift */; };
 		EF40EBF32149BBD1008EEA53 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF40EBF22149BBD1008EEA53 /* MoreViewController.swift */; };
+		EF40EBF5214B5D1D008EEA53 /* PresentSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF40EBF4214B5D1D008EEA53 /* PresentSectionViewController.swift */; };
+		EF48FFB9214B731100D5DB8C /* DismissSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF48FFB8214B731100D5DB8C /* DismissSectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		EF40EBEE2149A561008EEA53 /* BookmarkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkTableViewCell.swift; sourceTree = "<group>"; };
 		EF40EBF02149B360008EEA53 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		EF40EBF22149BBD1008EEA53 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		EF40EBF4214B5D1D008EEA53 /* PresentSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentSectionViewController.swift; sourceTree = "<group>"; };
+		EF48FFB8214B731100D5DB8C /* DismissSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissSectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				EF32A2712146F35F00A70443 /* SectionCollectionViewCell.swift */,
 				EF32A26F2146F2C800A70443 /* Data.swift */,
 				EF32A25C214322B300A70443 /* Main.storyboard */,
+				EF40EBF4214B5D1D008EEA53 /* PresentSectionViewController.swift */,
+				EF48FFB8214B731100D5DB8C /* DismissSectionViewController.swift */,
 				EF40EBF22149BBD1008EEA53 /* MoreViewController.swift */,
 				EF40EBF02149B360008EEA53 /* WebViewController.swift */,
 				EF40EBEE2149A561008EEA53 /* BookmarkTableViewCell.swift */,
@@ -176,6 +182,8 @@
 				EF40EBEF2149A561008EEA53 /* BookmarkTableViewCell.swift in Sources */,
 				EF32A26E2144D68B00A70443 /* SectionViewController.swift in Sources */,
 				EF32A2742147229800A70443 /* TestimonialViewController.swift in Sources */,
+				EF48FFB9214B731100D5DB8C /* DismissSectionViewController.swift in Sources */,
+				EF40EBF5214B5D1D008EEA53 /* PresentSectionViewController.swift in Sources */,
 				EF40EBF12149B360008EEA53 /* WebViewController.swift in Sources */,
 				EF32A2722146F35F00A70443 /* SectionCollectionViewCell.swift in Sources */,
 				EF32A276214722B900A70443 /* TestimonialCollectionViewCell.swift in Sources */,

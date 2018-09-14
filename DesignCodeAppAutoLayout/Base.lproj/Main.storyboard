@@ -552,7 +552,7 @@
                                             <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tyD-mj-FPq">
                                                 <rect key="frame" x="19.999999999999996" y="20" width="56.666666666666657" height="36"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="lSR-Vg-8tk">
-                                                    <rect key="frame" x="0.0" y="0.0" width="56.666666666666657" height="36"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="57" height="36"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 / 12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FYL-W9-c6E">
@@ -636,6 +636,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Nlc-bD-YYL" secondAttribute="trailing" constant="20" id="0jn-8f-aXk"/>
                                     <constraint firstItem="Nlc-bD-YYL" firstAttribute="top" secondItem="MQq-x6-V5I" secondAttribute="bottom" constant="30" id="8AK-D1-Ya7"/>
@@ -649,10 +650,9 @@
                                 <viewLayoutGuide key="safeArea" id="AxM-KY-zEb"/>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="41R-7P-goD" secondAttribute="bottom" id="8dn-vH-V6M"/>
-                            <constraint firstAttribute="trailing" secondItem="41R-7P-goD" secondAttribute="trailing" id="C9W-SU-R7Q"/>
+                            <constraint firstAttribute="bottom" secondItem="41R-7P-goD" secondAttribute="bottom" priority="999" id="8dn-vH-V6M"/>
+                            <constraint firstAttribute="trailing" secondItem="41R-7P-goD" secondAttribute="trailing" priority="999" id="C9W-SU-R7Q"/>
                             <constraint firstItem="41R-7P-goD" firstAttribute="leading" secondItem="dZP-5o-4cU" secondAttribute="leading" id="Sh2-sc-V3P"/>
                             <constraint firstItem="41R-7P-goD" firstAttribute="top" secondItem="dZP-5o-4cU" secondAttribute="top" id="Uys-z3-krF"/>
                         </constraints>
@@ -661,8 +661,12 @@
                     <connections>
                         <outlet property="bodyLabel" destination="Nlc-bD-YYL" id="0M3-dM-P09"/>
                         <outlet property="captionLabel" destination="P9A-de-PWJ" id="EmB-yf-7nz"/>
+                        <outlet property="closeVisualEffectView" destination="DtF-2E-g0m" id="GmI-HE-Zg1"/>
                         <outlet property="coverImageView" destination="qwS-er-bkv" id="iYS-bq-5g4"/>
+                        <outlet property="coverView" destination="MQq-x6-V5I" id="Cjq-fq-bem"/>
                         <outlet property="progressLabel" destination="FYL-W9-c6E" id="Dr6-sP-TeE"/>
+                        <outlet property="scrollView" destination="41R-7P-goD" id="uac-eV-dLk"/>
+                        <outlet property="subheadVisualEffectView" destination="tyD-mj-FPq" id="ejO-oD-yP9"/>
                         <outlet property="titleLabel" destination="CDC-u6-Mpt" id="gVY-yF-kjt"/>
                     </connections>
                 </viewController>
@@ -1728,6 +1732,6 @@
         <image name="ios11" width="2880" height="1600"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4JM-rw-Arx"/>
+        <segue reference="VN3-Yt-xgs"/>
     </inferredMetricsTieBreakers>
 </document>
