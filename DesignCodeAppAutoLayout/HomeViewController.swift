@@ -22,6 +22,9 @@ class HomeViewController: UIViewController {
     var isStatusBarHidden = false
     let presentSectionViewController = PresentSectionViewController()
     
+    let dismissSectionViewController = DismissSectionViewController()
+    
+    
     
     
     @IBAction func playButtonTapped(_ sender: Any) {
@@ -72,6 +75,8 @@ class HomeViewController: UIViewController {
             let attributes = chapterCollectionView.layoutAttributesForItem(at: indexPath)!
             let cellFrame = chapterCollectionView.convert(attributes.frame, to: view)
             
+            dismissSectionViewController.cellFrame = cellFrame
+            dismissSectionViewController.cellTransform = animateCell(cellFrame: cellFrame)
             presentSectionViewController.cellFrame = cellFrame
             presentSectionViewController.cellTransform = animateCell(cellFrame: cellFrame)
             
@@ -209,6 +214,10 @@ extension HomeViewController: UIScrollViewDelegate {
 extension HomeViewController: UIViewControllerTransitioningDelegate {
     func animateController(forPresented present: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return presentSectionViewController
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return dismissSectionViewController
     }
 }
 
