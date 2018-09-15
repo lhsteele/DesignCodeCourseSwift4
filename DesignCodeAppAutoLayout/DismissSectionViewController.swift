@@ -21,7 +21,7 @@ class DismissSectionViewController: NSObject, UIViewControllerAnimatedTransition
         let containerView = transitionContext.containerView
         containerView.addSubview(origin.view)
         
-        let animator = UIViewPropertyAnimator(duration: 0.8, dampingRatio: 0.7) {
+        let animator = UIViewPropertyAnimator(duration: 0.5, dampingRatio: 0.7) {
             let widthConstrant = origin.scrollView.widthAnchor.constraint(equalToConstant: 304)
             let heightConstraint = origin.scrollView.heightAnchor.constraint(equalToConstant: 248)
             let bottomConstraint = origin.scrollView.bottomAnchor.constraint(equalTo: origin.coverView.bottomAnchor)
