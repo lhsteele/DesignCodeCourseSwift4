@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB45DCD2E318B9027885E1C2 /* Pods_DesignCodeAppAutoLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B95E6D9D8F6EE544D6464E5B /* Pods_DesignCodeAppAutoLayout.framework */; };
 		EF32A259214322B300A70443 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF32A258214322B300A70443 /* AppDelegate.swift */; };
 		EF32A25B214322B300A70443 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF32A25A214322B300A70443 /* HomeViewController.swift */; };
 		EF32A25E214322B300A70443 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF32A25C214322B300A70443 /* Main.storyboard */; };
@@ -30,6 +31,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		698C518A931675D8BBDF9F8E /* Pods-DesignCodeAppAutoLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignCodeAppAutoLayout.release.xcconfig"; path = "Pods/Target Support Files/Pods-DesignCodeAppAutoLayout/Pods-DesignCodeAppAutoLayout.release.xcconfig"; sourceTree = "<group>"; };
+		A22FA1677299113E49EB4DE1 /* Pods-DesignCodeAppAutoLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignCodeAppAutoLayout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DesignCodeAppAutoLayout/Pods-DesignCodeAppAutoLayout.debug.xcconfig"; sourceTree = "<group>"; };
+		B95E6D9D8F6EE544D6464E5B /* Pods_DesignCodeAppAutoLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignCodeAppAutoLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF32A255214322B300A70443 /* DesignCodeAppAutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCodeAppAutoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF32A258214322B300A70443 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF32A25A214322B300A70443 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -59,17 +63,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB45DCD2E318B9027885E1C2 /* Pods_DesignCodeAppAutoLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		132617A4CCDA7848A77E2110 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A22FA1677299113E49EB4DE1 /* Pods-DesignCodeAppAutoLayout.debug.xcconfig */,
+				698C518A931675D8BBDF9F8E /* Pods-DesignCodeAppAutoLayout.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		994CC09675A68E035949B0A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B95E6D9D8F6EE544D6464E5B /* Pods_DesignCodeAppAutoLayout.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EF32A24C214322B300A70443 = {
 			isa = PBXGroup;
 			children = (
 				EF32A257214322B300A70443 /* DesignCodeAppAutoLayout */,
 				EF32A256214322B300A70443 /* Products */,
+				132617A4CCDA7848A77E2110 /* Pods */,
+				994CC09675A68E035949B0A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,9 +140,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF32A26A214322BE00A70443 /* Build configuration list for PBXNativeTarget "DesignCodeAppAutoLayout" */;
 			buildPhases = (
+				5E245BBE5B017EEDFD8DAA5E /* [CP] Check Pods Manifest.lock */,
 				EF32A251214322B300A70443 /* Sources */,
 				EF32A252214322B300A70443 /* Frameworks */,
 				EF32A253214322B300A70443 /* Resources */,
+				5E34920F1279F4DEE201B984 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -174,6 +200,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E245BBE5B017EEDFD8DAA5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DesignCodeAppAutoLayout-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E34920F1279F4DEE201B984 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DesignCodeAppAutoLayout/Pods-DesignCodeAppAutoLayout-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Spring/Spring.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spring.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DesignCodeAppAutoLayout/Pods-DesignCodeAppAutoLayout-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EF32A251214322B300A70443 /* Sources */ = {
@@ -338,6 +411,7 @@
 		};
 		EF32A26B214322BE00A70443 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A22FA1677299113E49EB4DE1 /* Pods-DesignCodeAppAutoLayout.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -356,6 +430,7 @@
 		};
 		EF32A26C214322BE00A70443 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 698C518A931675D8BBDF9F8E /* Pods-DesignCodeAppAutoLayout.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
