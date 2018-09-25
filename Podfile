@@ -14,4 +14,13 @@ target 'DesignCodeAppAutoLayout' do
             config.build_settings.delete('CODE_SIGNING_REQUIRED')
         end
     end
+
+#    post_install do |installer|
+#        installer.pods_project.targets.each do |target|
+#            if target.name == 'Spring'
+#                target.build_configurations.each do |config|
+#                    config.build_settings['LD_RUNPATH_SEARCH_PATHS'] = ['$(inherited)', '/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator']
+#                end
+#            end
+#        end
 end
